@@ -8,11 +8,7 @@ function Navbar() {
   }
 }
 
-// A-PROPOS
-function AtoutSeen() {
-  document.getElementById("test").style.display = "block";
-  console.log("this works");
-}
+//CARD
 
 // FORM
 window.onload = function () {
