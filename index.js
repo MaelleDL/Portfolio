@@ -7,9 +7,24 @@ function Navbar() {
     x.style.display = "block";
   }
 }
+// ATOUT
 
 //CARD
+function cardOnClick() {
+  document.getElementById("c1f1").style.background = "#118880";
+  document.getElementById("c1f1").style.transform = "translateY(0)";
+  document.getElementById("c1f2").style.transform = "translateY(0)";
+}
+function cardOnBlur() {
+  document.getElementById("c1f1").style.background = "#333";
+  document.getElementById("c1f1").style.transform = "translateY(100)";
+  document.getElementById("c1f2").style.transform = "translateY(100)";
+}
 
+//   .container .card .face.face2 .content a:hover {
+//     background: #333;
+//     color: #fff;
+//   }
 // FORM
 window.onload = function () {
   document.getElementById("form").addEventListener("submit", function (event) {
