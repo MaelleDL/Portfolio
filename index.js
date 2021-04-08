@@ -1,30 +1,39 @@
 // NAVBAR
-function Navbar() {
-  var x = document.getElementById("navbar");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-// ATOUT
-
-//CARD
-function cardOnClick() {
-  document.getElementById("c1f1").style.background = "#118880";
-  document.getElementById("c1f1").style.transform = "translateY(0)";
-  document.getElementById("c1f2").style.transform = "translateY(0)";
-}
-function cardOnBlur() {
-  document.getElementById("c1f1").style.background = "#333";
-  document.getElementById("c1f1").style.transform = "translateY(100)";
-  document.getElementById("c1f2").style.transform = "translateY(100)";
-}
-
-//   .container .card .face.face2 .content a:hover {
-//     background: #333;
-//     color: #fff;
+// function Navbar() {
+//   var x = document.getElementById("navbar");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
 //   }
+// }
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+
+
 // FORM
 window.onload = function () {
   document.getElementById("form").addEventListener("submit", function (event) {

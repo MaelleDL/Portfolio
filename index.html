@@ -3,7 +3,10 @@
     <title>Maelle Daniel</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="style.css" />
+
     <!-- Import police -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -27,19 +30,31 @@
     </script>
   </head>
   <body>
-    <nav id="header">
-      <a href="#welcome">
-        <img src="./IMG/LOGON-EXTRA-SMALL.png" alt="Logo"
-      /></a>
-      <div id="navbar">
+
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-start">
+      <div class="navbar-brand">
+        <a href="#welcome">
+          <img src="./IMG/LOGON-EXTRA-SMALL.png" alt="Logo"
+          />
+        </a>
+      </div>
+      <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+      
+      <div class="navbar-menu" id="navMenu">
         <a href="#Apropos" class="header-link sub"><h2>A propos</h2></a>
         <a href="#Travail" class="header-link sub"><h2>Mon travail</h2></a>
         <a href="#Contact" class="header-link sub"><h2>Me contacter</h2></a>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="Navbar()">
-        <img src="./IMG/List.png" />
-      </a>
     </nav>
+
+
+
     <section id="welcome">
       <div class="bigbox">
         <div class="box box1"></div>
@@ -66,8 +81,8 @@
         <p>Bonjour et bienvenue sur mon portfolio!</p>
         <p>Je m'appelle Maëlle Daniel et suis développeuse web junior.</p>
         <p>
-          Ayant un intérêt pour l'UX et l'UI, j'apprécie tout particulièrement
-          le développement front-end.
+          Ayant un intérêt certain pour l'UX et l'UI, j'apprécie tout
+          particulièrement le développement front-end.
         </p>
         <a href="CV.pdf" class="button">Mon CV</a>
       </div>
@@ -85,84 +100,66 @@
           </div>
           <div class="atout dynamisme">
             <h4>DYNAMISME</h4>
-            <p id="dynatext"></p>
+            <p id="dynatext">
+              Toujours motivée et enthousiate, je sais transmettre mon énergie à
+              une équipe. Souriante et enjoué, j'aime le travail efficace sans
+              pour autant bacler mes taches. Etant créative ce dynamisme se
+              traduit également par une volonté d'être force de propositions sur
+              les projets auxquels je participe.
+            </p>
           </div>
-          <div class="atout serieux">
-            <h4>SERIEUX</h4>
-            <p id="sertext"></p>
+          <div class="atout eclectisme">
+            <h4>ECLECTISME</h4>
+            <p id="ecltext">
+              Comme en témoigne mon parcours (voir mon CV), l'eclectisme est une
+              évidence. Aucunement signe d'instabilité ce gout de la diversité
+              est chez moi l'expression d'une curiosité globale. Cette dernière
+              alliée à mon parcours fait de moi une personne riche d'expériences
+              et de connaissances et me permet également d'avoir une forte
+              capacité d'adaptation.
+            </p>
           </div>
         </div>
       </div>
     </section>
     <section id="Travail">
+      <h3>MON TRAVAIL</h3>
       <div class="cards">
-        <div class="container">
-          <div class="card">
-            <div class="face face1" id="c1f1" onClick="cardOnClick()">
-              <div class="content">
-                <h4>API</h4>
-              </div>
-            </div>
-            <div class="face face2" id="c1f2" onClick="cardOnBlur()">
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  cum cumque minus iste veritatis provident at.
-                </p>
-                <a href="#">Voir</a>
-              </div>
-            </div>
+
+
+        <div class="card">
+          <div class="img-container card1">
+            <h4 class="card-title">POKEDEX</h4>
           </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <h4>Blog</h4>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  cum cumque minus iste veritatis provident at.
-                </p>
-                <a href="#">Voir</a>
-              </div>
-            </div>
+          <div class="card-body">
+            <p>
+              Un travail d'appel de l'API pokeAPI en vanillaJS, respectant l'univers de la
+              série Pokemon.
+            </p>
           </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <h4>Top Chrono</h4>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  cum cumque minus iste veritatis provident at.
-                </p>
-                <a href="#">Voir</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <h4>Wyldside</h4>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  cum cumque minus iste veritatis provident at.
-                </p>
-                <a href="#">Voir</a>
-              </div>
-            </div>
-          </div>
+          <a href="https://maelledl.github.io/Pokedex/">Voir</a>
         </div>
+        
+        <div class="card">
+        <div class="img-container card2">
+          <h4 class="card-title">BLOG</h4>
+        </div>
+        <div class="card-body">
+          <p>
+            Un simple blog dans un environnement Node.js.
+            Le back-end est sous Express et le front est en HTML/CSS/VanillaJS. Réalisé en tant que chef de groupe afin de montrer un exemple de l'exercice attendu.
+          </p>
+          
+        </div><a href="https://github.com/MaelleDL/blog_test">Voir le répository GitHub</a>
       </div>
+
+     
+      </div>
+    </div>
+
+
+
+
     </section>
     <section id="Contact">
       <h3>ME CONTACTER</h3>
@@ -180,7 +177,7 @@
           <input type="submit" value="Envoyer" class="button" />
         </form>
         <div class="contactecrit">
-          <p>N'hésitez pas à me contacter pour toutes questions ou pour</p>
+          <p>N'hésitez pas à me contacter pour toutes questions</p>
           <p>mail:</p>
           <p>maelledaniel2@gmail.com</p>
           <p>phone:</p>
