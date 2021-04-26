@@ -57,20 +57,18 @@
 
     <section id="welcome">
       <div class="bigbox">
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-        <div class="box box3"></div>
-        <div class="box box4"></div>
-        <div class="box box5"></div>
-        <div class="box box3"></div>
-        <div class="box box4"></div>
-        <div class="box box2"></div>
         <div class="Intro">
           <h1>Maëlle Daniel</h1>
           <h2>Web developper</h2>
+          <!-- <p>&#x21E3;</p> -->
         </div>
+       
       </div>
     </section>
+
+
+
+
     <section id="Apropos">
       <div id="Apropos-info">
         <h3>A PROPOS</h3>
@@ -86,39 +84,29 @@
         </p>
         <a href="CV.pdf" class="button">Mon CV</a>
       </div>
+
+
       <div id="qualite">
-        <div class="atout-wrap">
-          <div class="atout humanite">
-            <h4>HUMANITE</h4>
-            <p id="humatext">
-              Forte de plusieurs expériences dans le service à la personne,
-              d'une expérience de scène et d'une tendance générale à aimer
-              l'humain, la communication, l'empatie et le rapport à l'autre est
-              une de grande force. Je sais communiquer, écouter et comprendre
-              les attentes des clients ou de mes collègues.
-            </p>
-          </div>
-          <div class="atout dynamisme">
-            <h4>DYNAMISME</h4>
-            <p id="dynatext">
-              Toujours motivée et enthousiate, je sais transmettre mon énergie à
-              une équipe. Souriante et enjoué, j'aime le travail efficace sans
-              pour autant bacler mes taches. Etant créative ce dynamisme se
-              traduit également par une volonté d'être force de propositions sur
-              les projets auxquels je participe.
-            </p>
-          </div>
-          <div class="atout eclectisme">
-            <h4>ECLECTISME</h4>
-            <p id="ecltext">
-              Comme en témoigne mon parcours (voir mon CV), l'eclectisme est une
-              évidence. Aucunement signe d'instabilité ce gout de la diversité
-              est chez moi l'expression d'une curiosité globale. Cette dernière
-              alliée à mon parcours fait de moi une personne riche d'expériences
-              et de connaissances et me permet également d'avoir une forte
-              capacité d'adaptation.
-            </p>
-          </div>
+        <div class="quali">
+          <img src="./IMG/M.png" alt="M-illustration" width="30%">
+            <p>DYNAMISME</p>
+          <img src="./IMG/DotsThreeOutline.png" alt="dots">
+            <p>Enthousiaste</p>
+            <p>Esprit d’équipe</p>
+        </div>
+        <div class="quali">
+          <img src="./IMG/A.png" alt="A-illustration" width="30%">
+            <p>CREATIVITE</p>
+          <img src="./IMG/DotsThreeOutline.png" alt="dots">
+            <p>Intérêt pour l'UX/UI</p>
+            <p>Simplicité</p>
+        </div>
+        <div class="quali">
+          <img src="./IMG/D.png" alt="A-illustration" width="30%">
+            <p>MOTIVATION</p>
+          <img src="./IMG/DotsThreeOutline.png" alt="dots">
+            <p>Soif d'apprendre</p>
+            <p>Autodidacte</p>
         </div>
       </div>
     </section>
@@ -126,34 +114,52 @@
       <h3>MON TRAVAIL</h3>
       <div class="cards">
 
-
-        <div class="card">
-          <div class="img-container card1">
-            <h4 class="card-title">POKEDEX</h4>
+        <div class="card work">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="./IMG/pokedex.webp" alt="pokedex">
+            </figure>
           </div>
-          <div class="card-body">
-            <p>
-              Un travail d'appel de l'API pokeAPI en vanillaJS, respectant l'univers de la
-              série Pokemon.
-            </p>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">POKEDEX</p>
+              </div>
+            </div>
+        
+            <div class="content">
+              <p>Un travail d'appel de l'API pokeAPI en vanillaJS, respectant l'univers de la
+              série Pokemon.</p>
+            </div>
           </div>
-          <a href="https://maelledl.github.io/Pokedex/">Voir</a>
+          <footer class="card-footer">
+            <a href="https://maelledl.github.io/Pokedex/" class="card-footer-item">Voir le site</a>
+          </footer>
         </div>
         
-        <div class="card">
-        <div class="img-container card2">
-          <h4 class="card-title">BLOG</h4>
+        <div class="card work">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="./IMG/blog.webp" alt="blog">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">BLOG</p>
+              </div>
+            </div>
+        
+            <div class="content">
+              <p>Un simple blog dans un environnement Node.js.
+                Le back-end est sous Express et le front est en HTML/CSS/VanillaJS. Réalisé en tant que chef de groupe afin de montrer un exemple de l'exercice attendu.</p>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="https://github.com/MaelleDL/blog_test" class="card-footer-item">Voir le répository GitHub</a>
+          </footer>
         </div>
-        <div class="card-body">
-          <p>
-            Un simple blog dans un environnement Node.js.
-            Le back-end est sous Express et le front est en HTML/CSS/VanillaJS. Réalisé en tant que chef de groupe afin de montrer un exemple de l'exercice attendu.
-          </p>
-          
-        </div><a href="https://github.com/MaelleDL/blog_test">Voir le répository GitHub</a>
-      </div>
-
-     
+            
       </div>
     </div>
 
@@ -165,23 +171,30 @@
       <h3>ME CONTACTER</h3>
       <div class="contenu-contact">
         <form id="form">
-          <input type="hidden" name="contact_number" />
+          <input type="hidden" class="input" name="contact_number" />
           <label for="SurName">Votre nom:</label>
-          <input type="text" name="SurName" id="SurName" />
+          <input type="text" class="input" name="SurName" id="SurName" />
           <label for="Name">Votre prénom:</label>
-          <input type="text" name="Name" id="Name" />
+          <input type="text" class="input" name="Name" id="Name" />
           <label for="Mail">Votre e-mail:</label>
-          <input type="email" name="Mail" id="Mail" />
+          <input type="email" class="input" name="Mail" id="Mail" />
           <label for="message">Votre message</label>
-          <textarea name="message" id="message" cols="50" rows="5"></textarea>
-          <input type="submit" value="Envoyer" class="button" />
+          <textarea name="message" id="message" class="textarea" cols="50" rows="5"></textarea>
+          <input type="submit" value="Envoyer" class="button is-medium" />
         </form>
         <div class="contactecrit">
-          <p>N'hésitez pas à me contacter pour toutes questions</p>
-          <p>mail:</p>
-          <p>maelledaniel2@gmail.com</p>
-          <p>phone:</p>
-          <p>06.37.81.55.21</p>
+          <div class="mail contacts columns">
+            <img src="./IMG/Mail.png" alt="mail-ico" class="column is-one-third">
+            <p class="column">maelledaniel2@gmail.com</p>
+          </div>
+          <div class="phone contacts columns">
+            <img src="./IMG/TEL.png" alt="tel-ico" class="column is-one-third">
+            <p class="column">06.37.81.55.21</p>
+          </div>
+          <div class="localisation contacts columns">
+            <img src="./IMG/localisation.png" alt="localisation-ico" class="column is-one-third">
+            <p class="column">Nantes</p>
+          </div>
         </div>
       </div>
     </section>

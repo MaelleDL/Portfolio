@@ -5,6 +5,7 @@ html {
 }
 p {
   margin: 0;
+  word-spacing: 0.3rem;
 }
 body {
   margin: 0;
@@ -12,30 +13,25 @@ body {
   font-family: "Oswald", sans-serif;
   text-align: center;
   font-weight: 200;
+  font-size: 1.1rem;
   display: flex;
   flex-direction: column;
   background-color: #222222;
 }
 h3 {
-  background: linear-gradient(#056e67, #91d9cc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: #91d9cc;
   font-size: 1.5rem;
   font-size: 2rem;
 }
 .button,
 .submit {
   text-decoration: none;
-  background: radial-gradient(#77aaa1, #118880);
+  background: #118880;
   color: #e4e4e4;
   font-family: " Oswald ", sans-serif;
   border-radius: 10px;
   padding: 10px;
   font-size: 20px;
-  width: 150px;
   align-self: center;
   border: none;
   margin: 1rem;
@@ -103,6 +99,7 @@ h3 {
 }
 .navbar-burger {
   width: 5rem !important;
+  color: #fff;
 }
 .navbar-brand a img {
   padding: 0.5rem;
@@ -132,122 +129,48 @@ h3 {
 /* FIN HEADER */
 
 /*WELCOME*/
-
-.Intro h1,
-.Intro h2 {
-  text-align: right;
-  color: rgb(216, 215, 215);
-  text-shadow: 0 0 18px rgba(202, 228, 225, 0.92);
-  font-family: "Oswald", sans-serif;
-}
-.Intro h1 {
-  font-size: 3rem;
-}
-.Intro h2 {
-  font-size: 2rem;
-}
-
-@media only screen and (min-width: 745px) {
-  .Intro h1 {
-    font-size: 4rem;
-  }
-  .Intro h2 {
-    font-size: 2.5rem;
-  }
-}
-/* Northern Lights animation */
 .bigbox {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
-  background: rgb(2, 2, 2);
+  background: #222222;
   background-size: cover;
 }
 .Intro {
-  z-index: 0;
-  position: absolute;
-  right: 20px;
-  bottom: 0px;
+  width: 50vh;
+  height: 50vh;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadein 4s;
+  box-shadow: 2vh 2vh 5vh #91d9cc;
 }
-
-.box {
-  width: 20%;
-  height: 3em;
-  opacity: 0.75;
-  -webkit-filter: blur(90px);
-}
-
-.box1 {
-  background: #008696;
-  -webkit-animation: grow 3s infinite alternate backwards;
-  -moz-animation: grow 3s infinite alternate backwards;
-  -o-animation: grow 3s infinite alternate backwards;
-  animation: grow 3 infinite alternate backwards;
-}
-
-.box2 {
-  background: #91d9cc;
-  -webkit-animation: grow 5s infinite alternate backwards ease-in-out;
-  -moz-animation: grow 5s infinite alternate backwards ease-in-out;
-  -o-animation: grow 5s infinite alternate backwards ease-in-out;
-  animation: grow 5s infinite alternate backwards ease-in-out;
-}
-
-.box3 {
-  background: #756c8d;
-  -webkit-animation: grow 7s infinite alternate backwards ease-in-out;
-  -moz-animation: grow 7s infinite alternate backwards ease-in-out;
-  -o-animation: grow 7s infinite alternate backwards ease-in-out;
-  animation: grow 7s infinite alternate backwards ease-in-out;
-}
-
-.box4 {
-  background: #4b8a6c;
-  -webkit-animation: grow 8s infinite alternate backwards ease-in-out;
-  -moz-animation: grow 8s infinite alternate backwards ease-in-out;
-  -o-animation: grow 8s infinite alternate backwards ease-in-out;
-  animation: grow 8s infinite alternate backwards ease-in-out;
-}
-
-.box5 {
-  background: #91d9cc;
-  -webkit-animation: grow 10s infinite alternate backwards ease-in-out;
-  -moz-animation: grow 10s infinite alternate backwards ease-in-out;
-  -o-animation: grow 10s infinite alternate backwards ease-in-out;
-  animation: grow 10s infinite alternate backwards ease-in-out;
-}
-
-@-webkit-keyframes grow {
-  0% {
-    height: 10vh;
+@keyframes fadein {
+  from {
+    opacity: 0;
   }
-  100% {
-    height: 100vh;
+  to {
+    opacity: 1;
   }
 }
-@-moz-keyframes grow {
-  0% {
-    height: 10vh;
-  }
-  100% {
-    height: 100vh;
-  }
+.Intro h1,
+.Intro h2,
+.Intro p {
+  color: rgb(216, 215, 215);
+  text-shadow: 0 0 1vh rgba(202, 228, 225, 0.92);
 }
-@-o-keyframes grow {
-  0% {
-    height: 10vh;
-  }
-  100% {
-    height: 100vh;
-  }
+.Intro h1 {
+  font-size: 8vh;
 }
-@keyframes grow {
-  0% {
-    height: 10vh;
-  }
-  100% {
-    height: 100vh;
-  }
+.Intro h2 {
+  font-size: 5vh;
+}
+.Intro p {
+  font-size: 5vh;
 }
 /*FIN WELCOME*/
 
@@ -280,100 +203,20 @@ h3 {
 }
 
 /* Atouts */
-.atout-wrap {
-  margin-top: 5rem;
+#qualite {
+  /* margin: 2rem; */
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
 }
-.atout {
-  display: block;
-  font-family: "BebasNeueRegular", "Arial Narrow", Arial, sans-serif;
-  border: 8px solid #fff;
-  padding: 2%;
-  font-size: 30px;
-  letter-spacing: 3.5px;
-  line-height: 50px;
-  margin: 10px;
-  outline: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
+.quali {
+  background-color: #222222;
+  padding: 1rem;
+  margin: 1rem;
 }
-.atout h4 {
-  margin: 0;
-}
-.atout p {
-  margin: 0;
-  font-size: 12px;
-  line-height: 17px;
-  text-align: left;
-  background: rgba(117, 117, 117, 0.712);
-  border-radius: 4px;
-  padding: 0.3rem;
-}
-
-.humanite {
-  background: url("./IMG/TEAM.webp");
-}
-.dynamisme {
-  background: url("./IMG/dynamisme.webp");
-}
-.eclectisme {
-  background: url("./IMG/serieux.webp");
-}
-
-@media only screen and (min-width: 755px) {
-  .atout {
-    width: 400px;
-    height: 400px;
-    color: rgba(255, 255, 255, 0.1);
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-    font-size: 40px;
-    letter-spacing: 4px;
-    line-height: 66px;
-  }
-  .atout h4 {
-    margin: 2rem 0;
-  }
-  .atout p {
-    font-size: 20px;
-    line-height: 22px;
-  }
-
-  #humatext,
-  #dynatext,
-  #ecltext {
-    display: none;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .humanite:hover #humatext,
-  .humanite:focus #humatext,
-  .humanite:active #humatext,
-  .dynamisme:hover #dynatext,
-  .dynamisme:focus #dynatext,
-  .dynamisme:active #dynatext,
-  .eclectisme:hover #ecltext,
-  .eclectisme:focus #ecltext,
-  .eclectisme:active #ecltext {
-    display: block;
-  }
-  .atout:hover,
-  .atout:focus,
-  .atout:active {
-    box-shadow: 1px 3px 7px rgba(255, 255, 255, 0.733);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    color: rgba(255, 255, 255, 0.9);
+@media only screen and (min-width: 992px) {
+  #qualite {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 /*FIN A-PROPOS*/
@@ -388,78 +231,35 @@ h3 {
 .cards {
   width: 90%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
-}
-.card {
-  background-color: #e0e0e0;
-  border-radius: 0.25rem;
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
-    0 0 0 1px rgba(10, 10, 10, 0.02);
-  color: #4a4a4a;
-  width: 250px;
-  overflow: hidden;
-  position: relative;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.img-container {
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
-.card1 {
-  background: url(./IMG/pokedex.webp);
-}
-.card2 {
-  background: url(./IMG/blog.webp);
-}
-.card-title {
-  color: #e0e0e0;
-  font-size: 3rem;
-  background-color: #0a0a0a;
-  padding: 0 0.5rem;
-  border-radius: 0.25rem;
-}
-.card-body {
-  padding: 1rem;
-  color: #0a0a0a;
+.work {
+  background-color: #000;
+  margin: 1rem;
+  max-width: 25rem;
+  box-shadow: 10px 5px 5px #000;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
-.card a {
-  margin: 1rem;
-  text-decoration: none;
-  border: 1px solid #0a0a0a;
-  border-radius: 0.25rem;
-  color: #0a0a0a;
-  cursor: pointer;
-  padding-bottom: calc(0.5em - 1px);
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: calc(0.5em - 1px);
-  text-align: center;
-  white-space: nowrap;
+.card-content,
+.card .title {
+  color: #fff;
 }
-.card a:focus,
+.card .content p {
+  text-align: left;
+}
+.card .card-footer:hover,
+.card .card-footer:active,
+.card .card-footer:focus,
 .card a:hover,
-.card a:active {
-  color: #e0e0e0;
-  border: 1px solid #e0e0e0;
-  background: #0a0a0a;
-  box-shadow: 1px 3px 7px rgba(255, 255, 255, 0.733);
+.card a:active,
+.card a:focus {
+  color: #fff;
+  background-color: #118880;
 }
-@media only screen and (min-width: 755px) {
-  #Travail {
-    padding: 8rem;
-  }
-  .card {
-    width: 300px;
-  }
-}
+
 /* FIN MON TRAVAIL */
 /*CONTACT*/
 #Contact {
@@ -484,15 +284,33 @@ h3 {
   border: none;
   border-bottom: 2px solid #91d9cc;
   background: #0a0a0a;
-  color: #91d9cc;
+  font-size: 1.1rem;
+  color: #ffffff;
   font-family: "Oswald", sans-serif;
 }
 #form input[type="submit"] {
   margin: 0.5rem;
 }
-.contactecrit {
-  text-decoration: none;
+.input:active,
+.input:focus,
+.is-active.input,
+.is-active.textarea,
+.is-focused.input,
+.is-focused.textarea,
+.textarea:active,
+.textarea:focus {
+  box-shadow: 0 0 0 0.125em #91d9cc;
 }
+/* .contactecrit {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+/* .contacts {
+  margin: 1rem;
+} */
 @media only screen and (min-width: 755px) {
   #Contact {
     padding: 8rem;
