@@ -1,0 +1,85 @@
+#Contact {
+  background: linear-gradient($darkgray, $black, $darkgray);
+}
+.contacts-div {
+  width: 90%;
+  margin: auto;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: none;
+    border-bottom: 3px solid $teal;
+    background: transparent;
+    font-size: 1.1rem;
+    color: $white;
+  }
+  input:focus,
+  textarea:focus {
+    outline: none;
+  }
+  label {
+    margin-top: 1rem;
+  }
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  .card {
+    display: flex;
+    margin: 1rem 0rem;
+    .blue-square {
+      padding: 0.5rem 1.1rem;
+      height: 4rem;
+      width: 100%;
+    }
+    .bs-right {
+      left: -1.2rem;
+    }
+    img {
+      z-index: 2;
+      width: 3rem;
+    }
+    h3 {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-info {
+    .card {
+      .blue-square {
+        padding: 0.5rem 1.5rem;
+        width: 15rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+    .c-card-1 {
+      justify-content: flex-start;
+    }
+    .c-card-2 {
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .contacts-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  #form {
+    margin: 1rem;
+    max-width: 50%;
+  }
+  .contact-info {
+    width: 40%;
+  }
+}

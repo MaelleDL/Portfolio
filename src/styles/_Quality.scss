@@ -1,0 +1,29 @@
+#qualite {
+    display: flex;
+    flex-direction: column;
+  }
+  .quali {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $black;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  @media only screen and (min-width: 768px) {
+    #qualite {
+        max-width: 60%;
+        margin: auto;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    #qualite {
+      flex-direction: row;
+      justify-content: space-around;
+      max-width: 100%;
+      margin:5rem;
+    }
+    .quali{
+        width: 20%;
+    }
+  }

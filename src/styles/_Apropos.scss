@@ -1,0 +1,39 @@
+.presentation {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  .blue-square {
+    padding: 8rem 1rem 1.5rem 1rem;
+  }
+  .bs-right {
+    top: -7.5rem;
+    left: 0.5rem;
+    z-index: 0;
+  }
+  p {
+    margin: 0.2rem;
+  }
+  img {
+    z-index: 2;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .presentation {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .blue-square {
+      padding: 2rem 3rem;
+    }
+    .bs-right {
+      top: 0rem;
+      left: -2rem;
+    }
+    img {
+      width: 30%;
+    }
+  }
+}

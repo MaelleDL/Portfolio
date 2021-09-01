@@ -1,0 +1,77 @@
+$darkgray: #222222;
+$black: #101010;
+$white: #efefef;
+$teal: #92d3c9;
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: $white;
+}
+body {
+  background: $darkgray;
+  p {
+    font-size: 1.2rem;
+  }
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  hr {
+    height: 3px;
+    background: $teal;
+    border: none;
+  }
+}
+.small-line {
+  width: 20%;
+}
+.big-line {
+  width: 60%;
+}
+
+.blue-square {
+  border: 3px solid $teal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bs-left {
+  z-index: 1;
+  position: relative;
+}
+.bs-right {
+  z-index: 1;
+  position: relative;
+}
+
+.button {
+  text-decoration: none;
+  background: transparent;
+  font-size: 1.2rem;
+  align-self: center;
+  border: 3px solid $teal;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+}
+.button:hover,
+.button:focus,
+.button:active {
+  color: $darkgray;
+  background: $teal;
+}
+
+@import "./Nav";
+@import "./Accueil";
+@import "./Apropos";
+@import "./Quality";
+@import "./Mon-travail";
+@import "./Contact";
+

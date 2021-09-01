@@ -1,0 +1,30 @@
+#Accueil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: $darkgray;
+  background-size: cover;
+}
+.Intro {
+  width: 50vh;
+  height: 50vh;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2vh 2vh 5vh $teal;
+  h1,
+  h2 {
+    color: rgb(216, 215, 215);
+    text-shadow: 0 0 1vh rgba(202, 228, 225, 0.92);
+  }
+  h1 {
+    font-size: 8vh;
+  }
+  h2 {
+    font-size: 5vh;
+  }
+}
