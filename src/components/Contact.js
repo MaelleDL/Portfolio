@@ -37,28 +37,28 @@ const Contact = () => {
                 <div className="contact-info">
                     <div className="card c-card-1">
                         <img src={Localisation} alt="Localisation" />
-                        <div className="blue-square bs-right">
+                        <div className="blue-square bs">
                             <h3>Nantes</h3>
                         </div>
                     </div>
 
                     <div className="card c-card-2">
                         <img src={Mail} alt="Mail" />
-                        <div className="blue-square bs-right">
+                        <div className="blue-square bs">
                             <h3>maelledaniel2@gmail.com</h3>
                         </div>
                     </div>
 
                     <div className="card c-card-1">
                         <img src={GitHub} alt="github" />
-                        <div className="blue-square bs-right">
+                        <div className="blue-square bs">
                             <h3>MaelleDL</h3>
                         </div>
                     </div>
 
                     <div className="card c-card-2">
                         <img src={Linkedin} alt="Linked in" />
-                        <div className="blue-square bs-right">
+                        <div className="blue-square bs">
                             <h3>maelle daniel</h3>
                         </div>
                     </div>

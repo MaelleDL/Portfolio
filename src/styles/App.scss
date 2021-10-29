@@ -43,18 +43,15 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
-.bs-left {
-  z-index: 1;
-  position: relative;
-}
-.bs-right {
+
+.bs {
   z-index: 1;
   position: relative;
 }
 
 .button {
   text-decoration: none;
-  background: transparent;
+  background: $darkgray;
   font-size: 1.2rem;
   align-self: center;
   border: 3px solid $teal;
@@ -74,4 +71,3 @@ body {
 @import "./Quality";
 @import "./Mon-travail";
 @import "./Contact";
-

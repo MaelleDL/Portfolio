@@ -1,72 +1,84 @@
-.work {
-  width: 90%;
-  margin: auto;
+.Works {
   display: flex;
   flex-direction: column;
-  .blue-square {
-    padding: 8rem 1rem 2.5rem 1rem;
-  }
-  .bs-right {
-    top: -7.5rem;
-    left: 0.5rem;
-    z-index: 0;
-  }
-  .bs-left {
-    top: -7.5rem;
-    left: -0.5rem;
-    z-index: 0;
-  }
-  img {
-    z-index: 2;
-    width: 90%;
-  }
-  .btSpot {
-    position: relative;
-    top: -2.5rem;
-    display: flex;
-    justify-content: space-around;
-    z-index: 1;
-    button {
-      background-color: $darkgray;
-    }
-  }
-}
-.W-left {
-  img {
-    align-self: flex-end;
-  }
-}
-
-@media only screen and (min-width: 992px) {
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
   .work {
-    margin-bottom: 1rem;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .bs {
+      top: -7.5rem;
+      left: 0.5rem;
+      z-index: 0;
+    }
     .blue-square {
-      padding: 2rem 3rem;
-    }
-    .bs-right {
-      top: 0rem;
-      left: -2rem;
-    }
-    .bs-left {
-      top: 0rem;
+      padding: 8rem 1rem 3rem 1rem;
+      h2 {
+        margin: 1rem 0rem;
+      }
     }
     img {
-      width: 30%;
+      z-index: 2;
+      width: 15rem;
+      height: 15rem;
+      overflow: hidden;
+      object-fit: cover;
     }
     .btSpot {
       position: relative;
-      top: -2.6rem;
+      top: -2.5rem;
       display: flex;
       justify-content: space-around;
+      z-index: 1;
     }
   }
-  .W-left {
-    img {
-      position: relative;
-      left: -2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .Works {
+    .work {
+      max-width: 30rem;
+      img {
+        width: 20rem;
+        height: 20rem;
+      }
     }
   }
+}
+@media only screen and (min-width: 992px) {
+  .Works {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    .work {
+      max-width: 25rem;
+    }
+  }
+
+  // .work {
+  //   margin-bottom: 1rem;
+  //   flex-direction: row;
+  //   justify-content: center;
+  //   align-items: center;
+  //   .blue-square {
+  //     padding: 2rem 3rem;
+  //   }
+  //   .bs {
+  //     top: 2rem;
+  //     left: -2rem;
+  //   }
+
+  //   img {
+  //     width: 30%;
+  //   }
+  //   .btSpot {
+  //     position: relative;
+  //     top: -2.6rem;
+  //     display: flex;
+  //     justify-content: space-around;
+  //   }
+  // }
 }

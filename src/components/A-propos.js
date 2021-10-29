@@ -21,7 +21,7 @@ const Apropos = () => {
 
             <div className="presentation">
                 <img src={Portrait} alt="Portrait" />
-                <div className="blue-square bs-right">
+                <div className="blue-square bs">
                     <p>Bonjour et bienvenue sur mon portfolio!</p>
 
                     <p>Je m'appelle Maëlle Daniel et suis développeuse web junior.</p>
