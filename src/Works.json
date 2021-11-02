@@ -3,18 +3,24 @@
     "id": 1,
     "title": "Pokedex",
     "description": "C'est un de mes premiers travaux en formation. Le but de l'exercice était de créer un pokedex en faisant appel à l'API pokéAPI. L'interface est inspiré de l'univers même de Pokémon. ",
-    "image": "pokedex.png"
+    "image": "pokedex.png",
+    "SiteURL":"https:/maelledl.github.io/pokedex/",
+    "GitHubUrl":"https://maelledl.github.io/Pokedex/"
   },
   {
     "id": 2,
     "title": "To-do-List",
     "description": "Une To-do-List en React.js. Il est possible d'ajouter des tâches, de les valider, de les supprimer. Il est également possible de les filtrer par statut (Tous, Achevés, Inachevés). La logique générale a été faite en suivant l'aide d'un tutoriel de Dev-Ed. Je me suis appropriée l'UI. ",
-    "image": "To-do-List.png"
+    "image": "To-do-List.png",
+    "SiteURL":"https://maelledl.github.io/To-do-List/",
+    "GitHubUrl":"https://github.com/MaelleDL/To-do-List"
   },
   {
     "id": 3,
     "title": "Music-Player",
     "description": "Une petite application de lecture de musique en React.js. Un menu permet de voir les morceaux disponible. Boutons: Play/Pause, Chanson suivante, Chanson précédente et possibilité de naviguer à différents endroits de la chanson grâce au slider. La logique a été faite en suivant l'aide d'un tutoriel de Dev-Ed. J'ai légérement adapté l'UI.",
-    "image": "Music-Player.png"
+    "image": "Music-Player.png",
+    "SiteURL":"https://maelledl.github.io/Music-player/",
+    "GitHubUrl":"https://github.com/MaelleDL/Music-player"
   }
 ]

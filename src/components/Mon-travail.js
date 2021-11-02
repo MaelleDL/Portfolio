@@ -32,8 +32,8 @@ const Work = () => {
                             <p>{work.description}</p>
                         </div>
                         <div className="btSpot">
-                            <button className="button"> Visiter</button>
-                            <button className="button"> GitHub</button>
+                            <a href={work.SiteURL} target="_blank" className="button" > Visiter</a>
+                            <a href={work.GitHubUrl} target="_blank" className="button"> GitHub</a>
                         </div>
                     </div>
                 </div>)}
