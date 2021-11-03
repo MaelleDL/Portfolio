@@ -15,7 +15,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 2vh 2vh 5vh $teal;
+  box-shadow: 2rem 2rem 5rem $teal;
+  animation: neon 3s infinite ease-in-out alternate-reverse;
   h1,
   h2 {
     color: rgb(216, 215, 215);
@@ -26,5 +27,13 @@
   }
   h2 {
     font-size: 5vh;
+  }
+}
+@keyframes neon {
+  from {
+    box-shadow: 2rem 2rem 5rem $teal;
+  }
+  to {
+    box-shadow: 3rem 3rem 5rem $teal;
   }
 }

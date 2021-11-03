@@ -44,23 +44,23 @@ const Contact = () => {
 
                     <div className="card c-card-2">
                         <img src={Mail} alt="Mail" />
-                        <div className="blue-square bs">
+                        <a href="mailto:maelledaniel2@gmail.com" className="blue-square bs">
                             <h3>maelledaniel2@gmail.com</h3>
-                        </div>
+                        </a>
                     </div>
 
                     <div className="card c-card-1">
                         <img src={GitHub} alt="github" />
-                        <div className="blue-square bs">
+                        <a href="https://github.com/MaelleDL" target="_blank" className="blue-square bs">
                             <h3>MaelleDL</h3>
-                        </div>
+                        </a>
                     </div>
 
                     <div className="card c-card-2">
                         <img src={Linkedin} alt="Linked in" />
-                        <div className="blue-square bs">
+                        <a href="https://www.linkedin.com/in/maelle-daniel/" target="_blank" className="blue-square bs">
                             <h3>maelle daniel</h3>
-                        </div>
+                        </a>
                     </div>
 
                 </div>

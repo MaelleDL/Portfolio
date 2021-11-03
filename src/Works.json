@@ -3,14 +3,16 @@
     "id": 1,
     "title": "Pokedex",
     "description": "C'est un de mes premiers travaux en formation. Le but de l'exercice était de créer un pokedex en faisant appel à l'API pokéAPI. L'interface est inspiré de l'univers même de Pokémon. ",
+    "tech": [{"name":"HTML"}, {"name":"vanJs"},  {"name":"CSS"}],
     "image": "pokedex.png",
-    "SiteURL":"https:/maelledl.github.io/pokedex/",
-    "GitHubUrl":"https://maelledl.github.io/Pokedex/"
+    "SiteURL":"https:/maelledl.github.io/Pokedex/",
+    "GitHubUrl":"https://github.com/MaelleDL/Pokedex"
   },
   {
     "id": 2,
     "title": "To-do-List",
-    "description": "Une To-do-List en React.js. Il est possible d'ajouter des tâches, de les valider, de les supprimer. Il est également possible de les filtrer par statut (Tous, Achevés, Inachevés). La logique générale a été faite en suivant l'aide d'un tutoriel de Dev-Ed. Je me suis appropriée l'UI. ",
+    "description": "Il est possible d'ajouter des tâches, de les valider, de les supprimer. Il est également possible de les filtrer par statut (Tous, Achevés, Inachevés). La logique générale a été faite en suivant l'aide d'un tutoriel de Dev-Ed. Je me suis appropriée l'UI. ",
+    "tech": [{"name":"React"}, {"name":"CSS"}],
     "image": "To-do-List.png",
     "SiteURL":"https://maelledl.github.io/To-do-List/",
     "GitHubUrl":"https://github.com/MaelleDL/To-do-List"
@@ -18,9 +20,28 @@
   {
     "id": 3,
     "title": "Music-Player",
-    "description": "Une petite application de lecture de musique en React.js. Un menu permet de voir les morceaux disponible. Boutons: Play/Pause, Chanson suivante, Chanson précédente et possibilité de naviguer à différents endroits de la chanson grâce au slider. La logique a été faite en suivant l'aide d'un tutoriel de Dev-Ed. J'ai légérement adapté l'UI.",
+    "description": "Un menu permet de voir les morceaux disponible. Boutons: Play/Pause, Chanson suivante, Chanson précédente et possibilité de naviguer à différents endroits de la chanson grâce au slider. La logique a été faite en suivant l'aide d'un tutoriel de Dev-Ed. J'ai légérement adapté l'UI.",
+    "tech": [{"name":"React"}, {"name":"Sass"}],
     "image": "Music-Player.png",
     "SiteURL":"https://maelledl.github.io/Music-player/",
     "GitHubUrl":"https://github.com/MaelleDL/Music-player"
+  },
+  {
+    "id": 4,
+    "title": "Ordinary-Blog",
+    "description": "Ce projet est en cours et n'est pas encore visible tel quel. Un Blog pour entretenir et améliorer mes connaissances en développement. Le back et le front sont codés par mes soins.",
+    "tech": [{"name":"React"}, {"name":"Mui"}, {"name":"redux"}, {"name":"Express"}, {"name":"MongoDB"}],
+    "image": "Ordinary-blog.png",
+    "SiteURL":"https://github.com/MaelleDL/Ordinary-Blog-Client",
+    "GitHubUrl":"https://github.com/MaelleDL/Ordinary-Blog-Server"
+  },
+  {
+    "id": 5,
+    "title": "Scotland-tourism",
+    "description": "Ce projet est en cours et se veut être un site encourageant le tourisme en Ecosse. Je l'ai entrepris pour expérimenter moi-même des mises en page que je vois régulièrement sur le net (et par l'amour de l'Ecosse également).",
+    "tech": [{"name":"React"}, {"name":"Sass"}],
+    "image": "Scotland.png",
+    "SiteURL":"https://maelledl.github.io/Scotland-react/",
+    "GitHubUrl":"https://github.com/MaelleDL/Scotland-react"
   }
 ]
