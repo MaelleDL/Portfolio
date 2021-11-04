@@ -51,14 +51,14 @@ const Contact = () => {
 
                     <div className="card c-card-1">
                         <img src={GitHub} alt="github" />
-                        <a href="https://github.com/MaelleDL" target="_blank" className="blue-square bs">
+                        <a href="https://github.com/MaelleDL" target="_blank" rel="noreferrer" className="blue-square bs">
                             <h3>MaelleDL</h3>
                         </a>
                     </div>
 
                     <div className="card c-card-2">
                         <img src={Linkedin} alt="Linked in" />
-                        <a href="https://www.linkedin.com/in/maelle-daniel/" target="_blank" className="blue-square bs">
+                        <a href="https://www.linkedin.com/in/maelle-daniel/" target="_blank" rel="noreferrer" className="blue-square bs">
                             <h3>maelle daniel</h3>
                         </a>
                     </div>
