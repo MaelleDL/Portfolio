@@ -11,3 +11,31 @@ export const scrollReveal = {
         },
     },
 };
+
+export const frontFlip = {
+    hidden: {
+        rotateY: 0,
+        opacity: 1,
+    },
+    show: {
+        rotateY: -180,
+        opacity: 0,
+        transition: {
+            duration: 1.2
+        },
+    },
+};
+
+export const backFlip = {
+    hidden: {
+        rotateY: 180,
+        opacity: 0,
+    },
+    show: {
+        rotateY: 0,
+        opacity: 1,
+        transition: {
+            duration: 1.2
+        },
+    },
+};

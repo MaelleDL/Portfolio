@@ -22,12 +22,19 @@ const Apropos = () => {
 
             <div className="presentation">
                 <img src={Portrait} alt="Portrait" />
-                <div className="blue-square bs">
-                    <p>Bonjour et bienvenue sur mon portfolio!</p>
+                <div className="blabla">
+                    <div className="blue-square bs">
+                        <p>Bienvenue sur mon portfolio!</p>
 
-                    <p>Je m'appelle Maëlle Daniel et suis développeuse web junior.</p>
+                        <p>Je m'appelle Maëlle Daniel et suis développeuse web junior.</p>
 
-                    <p>Ayant un intérêt certain pour l'UX et l'UI, j'apprécie tout particulièrement le développement front-end. </p>
+                        <p>Issue d'un parcours non-linéaire et varié (Bac S, Licence d'Histoire, Cursus chant lyrique en conservatoire ), j'ai enfin trouvé ma voie dans le développement web. Ayant de l'appétence autant pour la logique et la résolution de problème que pour l'UX et l'UI, je m'épanouie pleinement dans ce domaine.</p>
+
+                        <p>En mars 2020, après huit mois de formation chez Simplon.co, j'ai obtenu mon titre professionnel de développeuse web et web mobile. Je continue à me former en autodidacte (edx, openclassroom, codecademy... ) et à m'exercer (projets personnels, codingame) afin de m'améliorer un peu plus chaque jour.</p>
+
+                        <p>Athlète de haut niveau, je met la même énergie et adopte le même état d'esprit dans le domaine professionnel que dans mon sport: détermination, dépassement de soi, résilliance, esprit d'équipe... Les efforts finissent toujours pas payer.</p>
+                        
+                    </div>
                     <a href={CV} target="_blank" rel="noreferrer" className="button">Mon CV</a>
                 </div>
             </div>

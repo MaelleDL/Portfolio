@@ -19,19 +19,63 @@
         width: 10%;
         margin: auto;
       }
-      .tech {
+      h2 {
+        color: $teal;
+        font-size: 1.5rem;
+      }
+      .madeIn {
+        font-size: smaller;
+      }
+      .group {
+        margin-bottom: 0.5rem;
         h2 {
-          color: $teal;
+          margin-right: 0.5rem;
         }
-        .technos {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          flex-wrap: wrap;
-          img {
-            width: 2.5rem;
+      }
+      .front {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .tech {
+          width: 100%;
+          .technos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            img {
+              height: 2.5rem;
+            }
           }
         }
+        .obj-ctxt {
+          z-index: 1;
+          a:hover,
+          a:focus,
+          a:active {
+            color: $teal;
+            cursor: pointer;
+          }
+        }
+      }
+      .back {
+        position: absolute;
+        margin-top: 2rem;
+        .Desc {
+          p {
+            margin: 0.5rem;
+          }
+        }
+      }
+      .ReadMore {
+        align-self: center;
+        color: $teal;
+      }
+      .ReadMore:hover,
+      .ReadMore:focus,
+      .ReadMore:active {
+        color: $white;
+        cursor: pointer;
       }
     }
     .coverim {
@@ -72,6 +116,14 @@
     .work {
       max-width: 25rem;
       margin: 0 2rem;
+      .blue-square {
+        .group {
+          display: flex;
+          p {
+            align-self: flex-end;
+          }
+        }
+      }
     }
   }
 }
