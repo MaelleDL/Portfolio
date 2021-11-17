@@ -31,8 +31,6 @@ const Apropos = () => {
                         <p>Issue d'un <span>parcours non-linéaire</span> et varié (Bac S, Licence d'Histoire, Cursus chant lyrique en conservatoire ), j'ai enfin trouvé ma voie dans le développement web. Ayant de l'appétence autant pour la <span>logique et la résolution de problème</span> que pour <span>l'UX et l'UI</span>, je m'épanouie pleinement dans ce domaine.</p>
 
                         <p>En mars 2020, après huit mois de formation chez Simplon.co, j'ai obtenu mon <span>titre professionnel de développeuse web et web mobile</span>. Je continue à <span>me former en autodidacte</span> (edx, openclassroom, codecademy... ) et à m'exercer (projets personnels, codingame) afin de m'améliorer un peu plus chaque jour.</p>
-
-                        <p>Athlète de haut niveau, je met la même énergie et adopte le même état d'esprit dans le domaine professionnel que dans mon sport: <span>détermination, dépassement de soi, résilience, esprit d'équipe...</span> </p>  
                     </div>
                     <a href={CV} target="_blank" rel="noreferrer" className="button">Mon CV</a>
                 </div>
